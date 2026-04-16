@@ -5,7 +5,7 @@
         <field name="model">delivery.carrier</field>
         <field name="inherit_id" ref="delivery.view_delivery_carrier_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//div[@name='provider_options']" position="inside">
+            <xpath expr="//sheet" position="inside">
                 <div invisible="delivery_type != 'cogepart'">
                     <group string="Configuration Cogepart">
                         <field name="cogepart_login"/>
